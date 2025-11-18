@@ -1,0 +1,289 @@
+/********  GENERAL  ********/
+body {
+    font-family: "Heebo", sans-serif;
+    margin: 0;
+    color: #21243D;
+}
+
+/********  NAVIGATION  ********/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: 15px auto 0 auto;
+}
+
+#nav-links{
+    display: flex;
+    gap: 65px;
+}
+
+#menu-button {
+    display: none;
+}
+
+.nav-link{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/********  HEADER  ********/
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: 100px auto;
+}
+
+div#header-content {
+    width: 630px;
+}
+
+h1 {font-weight: 700;
+    font-size: 44px;
+    margin-bottom: 0px;
+}
+
+#Button-CV {
+    background-color: #FF6464;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+#subtitle {
+    font-size: 16px;
+    margin: 35px 0;
+}
+
+/********  BLOG  ********/
+#blog {
+    background-color: #EDF7FA;
+    padding-bottom: 35px;
+ 
+}
+    
+#blog-content {
+   max-width: 1200px;
+   padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+   margin: auto;
+}   
+
+
+div#articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+
+article.article-blog {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    width: 543px;
+    max-width: 48%;
+    padding: 10px 20 px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+h3.article-titre {
+    font-size: 26px;   
+}
+
+p.date-categorie {
+    font-size: 18px;
+    display: flex;
+    gap: 25px;
+}
+
+p.article-description {
+    font-size: 16px;
+}
+
+/********  PORTFOILIO  ********/
+section#projets {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+article.projet {
+    display: flex;
+    gap: 50px;
+    margin: 40px;
+}
+
+h3.projet-titre {font-weight: 700;font-size: 30px;margin: 0 0 15px 0;}
+
+
+.date-type {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+span.projet-date {
+    background-color: #142850;
+    border-radius: 16px;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 18px;
+    width: 62px;
+    height: 26px;
+    text-align: center;
+}
+
+span.projet-type {
+    color: #8695A4;
+    font-size: 20px;
+}
+
+p.projet-description {
+    font-size: 16px;
+}
+
+/********  CONTACT  ********/
+div#contact-content {
+    display: flex;
+    gap: 40px;
+}
+
+section#contact {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+h3.contact-titre {
+    font-weight: 800;
+    font-size: 36px;
+}
+
+p#contatc-intro {
+    font-size: 20px;
+}
+
+p#contact-mail {
+    font-size: 16px;
+}
+
+a.Socials-link {
+    font-size: 16px;
+    color: #000000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+
+div#coordonnées {
+    flex: 1;
+}
+
+label {
+    font-size: 14px;
+}
+
+input, select, textarea {
+    background-color: #F7F7F7;
+    border: none;
+    height: 46px;
+}
+
+textarea#message {
+    height: 165px;
+}
+
+button#envoyer-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    height: 56px;
+}
+/********  FOOTER  ********/
+footer {
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+div#icones-socials {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+p#Copyright {
+    font-size: 14px;
+    color: #21243D;
+}
+
+/********  RESPONSIVE  ********/
+@media (max-width: 700px) {
+    
+    header {
+    flex-direction: column-reverse;
+    text-align: center;
+    }
+
+    #header-content {
+    width: 100%;
+    }
+
+    h2 {
+    text-align: center;
+    }
+
+    #coordonnées {
+       display: none;
+    }
+
+    article.projet {
+       flex-direction: column;
+    }
+
+    img.projet-image    {
+       width: 100%;
+    }
+
+    #articles {
+        flex-direction: column;
+    }
+
+    article.article-blog {
+        max-width: none;
+        width: 100%;
+        gap: 20px;
+    }
+
+    p.date-categorie {
+        gap: 5px;}
+
+
+}
