@@ -41,10 +41,10 @@ header {
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
-    margin: 100px auto;
+    margin: 75px auto;
 }
 
-div#header-content {
+#header-content {
     width: 630px;
 }
 
@@ -76,13 +76,13 @@ h1 {font-weight: 700;
 #blog-content {
    max-width: 1200px;
    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
+   padding-right: 20px;
+   box-sizing: border-box;
    margin: auto;
 }   
 
 
-div#articles {
+#articles {
     display: flex;
     justify-content: space-between;
 }
@@ -246,18 +246,27 @@ p#Copyright {
 
 /********  RESPONSIVE  ********/
 @media (max-width: 700px) {
-    
+
+    .nav-link {
+        display: none;
+    }
+
+    #menu-button {
+        display: block;
+        
+    }
+
     header {
-    flex-direction: column-reverse;
-    text-align: center;
+        flex-direction: column-reverse;
+        text-align: center;
     }
 
     #header-content {
-    width: 100%;
+        width: 100%;
     }
 
     h2 {
-    text-align: center;
+        text-align: center;
     }
 
     #coordonnées {
